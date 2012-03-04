@@ -1,0 +1,47 @@
+{
+  "author": "Steve Song", 
+  "author_email": "stephen.song@gmail.com", 
+  "download_url": "https://commondatastorage.googleapis.com/ckannet-storage/2011-11-24T112025/AfTerFibre_21nov2011.csv", 
+  "extras": {}, 
+  "id": "f06f651f-67bb-447e-a60c-a1b6ea22b7d9", 
+  "license": null, 
+  "maintainer": "", 
+  "maintainer_email": "", 
+  "name": "afterfibre", 
+  "notes": "", 
+  "relationships": [], 
+  "resources": [
+    {
+      "cache_last_updated": null, 
+      "cache_url": null, 
+      "description": "Test dataset for AfTerFibre project to map terrestrial fibre optic cable projects in Africa", 
+      "format": "text/csv", 
+      "hash": "md5:6939ae135bb3f274e9d5d346bffeb309", 
+      "id": "f5d81da5-2e55-4302-8ed2-58401d2c139e", 
+      "last_modified": "2011-11-24T11:20:43", 
+      "mimetype": "text/csv", 
+      "mimetype_inner": "", 
+      "name": "2011-11-24T112025/AfTerFibre_21nov2011.csv", 
+      "package_id": "f06f651f-67bb-447e-a60c-a1b6ea22b7d9", 
+      "position": 0, 
+      "resource_group_id": "494b7994-1d01-4b3f-82b7-91d451729aaf", 
+      "resource_type": "file.upload", 
+      "size": "622992", 
+      "url": "https://commondatastorage.googleapis.com/ckannet-storage/2011-11-24T112025/AfTerFibre_21nov2011.csv", 
+      "webstore_last_updated": null, 
+      "webstore_url": "http://thedatahub.org/api/data/f5d81da5-2e55-4302-8ed2-58401d2c139e/_search?size=10"
+    }
+  ], 
+  "tags": [
+    "africa", 
+    "bandwidth", 
+    "broadband", 
+    "cables", 
+    "fibre", 
+    "optic", 
+    "terrestrial"
+  ], 
+  "title": "African Terrestrial Fibre Optic Cables", 
+  "url": "http://manypossibilities.net/afterfibre/", 
+  "version": ""
+}
