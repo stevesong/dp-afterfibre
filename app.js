@@ -16,20 +16,25 @@ function setupGmaps() {
   var data = {
     size: 112
   };
+  $('.info').show().html('Loading <img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" />'); 
   var jqxhr = $.ajax({
     url: url,
     data: data,
     dataType: 'jsonp'
   });
   jqxhr.done(function(data) {
+    $('.info').hide();
     $.each(data.hits.hits, function(idx, item) {
       var geojson = item._source.Location;
       var content = $('<div />');
       content.append($('<h3 />').text(item._source.Route + ' [' + item._source.Country + ']'));
-      content.append($('<p />').text(item._source.Description));
+      content.append($('<p />').text(item._source.Description + ' '));
+      content = content.html();
+      var linksRegex = /(http:\/\/www.flickr.com\/\S*)/;
+      var content = content.replace(linksRegex, '<a href="$1" target="_blank">$1</a>');
       var color = DEFAULT_PALETTE[idx % DEFAULT_PALETTE.length];
 
-      addLineToMap(geojson, color, content.html());
+      addLineToMap(geojson, color, content);
     });
   });
 

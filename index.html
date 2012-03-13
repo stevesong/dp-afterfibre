@@ -8,8 +8,20 @@
 
 	<link rel="stylesheet" href="vendor/leaflet.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="vendor/leaflet.ie.css" /><![endif]-->
+  <style type="text/css">
+    .info {
+      position: absolute;
+      top: 150px;
+      left: 450px;
+      z-index: 1000;
+      background: white;
+      opacity: 0.8;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
+  <div class="info"></div>
 	<div id="map" style="width: 900px; height: 600px"></div>
 
 	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
